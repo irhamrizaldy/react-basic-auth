@@ -9,8 +9,6 @@ const Router = require('./Router');
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json());
 
-console.log('Testing server');
-
 //Database
 const db = mysql.createConnection({
     host: 'localhost',
